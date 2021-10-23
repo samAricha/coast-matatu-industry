@@ -1,6 +1,7 @@
 import Image from 'next/image'
 
 const Footer = () => {
+  const year = new Date().getFullYear()
   return (
     <div className='container'>
       <footer className='d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top'>
@@ -17,7 +18,7 @@ const Footer = () => {
               alt='Coast Matatu Industry'
             />
           </a>
-          <span className='text-muted'>&copy; 2021 Coast Matatu Industry</span>
+          <span className='text-muted'>&copy; {year} Coast Matatu Industry</span>
         </div>
 
         <ul className='nav col-md-4 justify-content-end list-unstyled d-flex'>
